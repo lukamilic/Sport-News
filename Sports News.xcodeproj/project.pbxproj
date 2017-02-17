@@ -13,6 +13,9 @@
 		F14036511E3F9FCF0051B3A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F14036501E3F9FCF0051B3A0 /* Assets.xcassets */; };
 		F14036541E3F9FCF0051B3A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F14036521E3F9FCF0051B3A0 /* LaunchScreen.storyboard */; };
 		F140365F1E3F9FCF0051B3A0 /* Sports_NewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140365E1E3F9FCF0051B3A0 /* Sports_NewsTests.swift */; };
+		F140366A1E3FA5550051B3A0 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F14036691E3FA5550051B3A0 /* NewsCell.swift */; };
+		F140366C1E3FAAE10051B3A0 /* News.swift in Sources */ = {isa = PBXBuildFile; fileRef = F140366B1E3FAAE10051B3A0 /* News.swift */; };
+		F1BACB7F1E42503F00E425B5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BACB7E1E42503F00E425B5 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		F140365A1E3F9FCF0051B3A0 /* Sports NewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Sports NewsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F140365E1E3F9FCF0051B3A0 /* Sports_NewsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sports_NewsTests.swift; sourceTree = "<group>"; };
 		F14036601E3F9FCF0051B3A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F14036691E3FA5550051B3A0 /* NewsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		F140366B1E3FAAE10051B3A0 /* News.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = News.swift; sourceTree = "<group>"; };
+		F1BACB7E1E42503F00E425B5 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,10 @@
 		F14036481E3F9FCF0051B3A0 /* Sports News */ = {
 			isa = PBXGroup;
 			children = (
+				F140366D1E3FBACB0051B3A0 /* Model */,
+				F140366E1E3FBAD00051B3A0 /* View */,
+				F140366F1E3FBAD40051B3A0 /* Controller */,
 				F14036491E3F9FCF0051B3A0 /* AppDelegate.swift */,
-				F140364B1E3F9FCF0051B3A0 /* ViewController.swift */,
-				F140364D1E3F9FCF0051B3A0 /* Main.storyboard */,
 				F14036501E3F9FCF0051B3A0 /* Assets.xcassets */,
 				F14036521E3F9FCF0051B3A0 /* LaunchScreen.storyboard */,
 				F14036551E3F9FCF0051B3A0 /* Info.plist */,
@@ -94,6 +101,32 @@
 				F14036601E3F9FCF0051B3A0 /* Info.plist */,
 			);
 			path = "Sports NewsTests";
+			sourceTree = "<group>";
+		};
+		F140366D1E3FBACB0051B3A0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F140366B1E3FAAE10051B3A0 /* News.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		F140366E1E3FBAD00051B3A0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F14036691E3FA5550051B3A0 /* NewsCell.swift */,
+				F140364D1E3F9FCF0051B3A0 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		F140366F1E3FBAD40051B3A0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F140364B1E3F9FCF0051B3A0 /* ViewController.swift */,
+				F1BACB7E1E42503F00E425B5 /* WebViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +235,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F140364C1E3F9FCF0051B3A0 /* ViewController.swift in Sources */,
+				F140366A1E3FA5550051B3A0 /* NewsCell.swift in Sources */,
+				F140366C1E3FAAE10051B3A0 /* News.swift in Sources */,
+				F1BACB7F1E42503F00E425B5 /* WebViewController.swift in Sources */,
 				F140364A1E3F9FCF0051B3A0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -412,6 +448,7 @@
 				F14036651E3F9FCF0051B3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F14036661E3F9FCF0051B3A0 /* Build configuration list for PBXNativeTarget "Sports NewsTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +457,7 @@
 				F14036681E3F9FCF0051B3A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
